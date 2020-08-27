@@ -1,6 +1,9 @@
 {
   "name": "mern",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.6.0"
+  },
   "description": "shoppin list with traverys",
   "main": "server.js",
   "scripts": {
@@ -9,7 +12,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": " concurrently \"npm run server\"  \"npm run client\" ",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
